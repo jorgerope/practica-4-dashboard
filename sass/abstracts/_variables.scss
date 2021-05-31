@@ -1,2 +1,53 @@
 /* @VARIABLES */
 /* ********** */
+
+
+// colores
+
+$colores:(
+colorbg:whitesmoke,
+colorLinea1:blue,
+colorLinea2:red,
+colorFont1:black,
+colorFont2: #BDC0C8,
+colorFont3:#8FCDC5,
+colorFondo:white
+);
+
+
+// TAMAÑOS
+$dispositivos: (
+    smartphone: 360px,
+        desktop: 1366px
+);
+
+$breakpoints: (
+    smartphone: 320px,
+    desktop: 1100px
+);
+
+$margenes: (
+    internos: 16px,
+    navHorizontal: 10px
+);
+
+
+// TIPOGRAFIA
+
+$tipografias:(
+grande: 40px,
+mediano:24px,
+media:16px,
+pequeno:10px,
+);
+
+// tipo tipografia
+
+$fontFamily: "roboto-regular", sans-serif;
+$fontFamilyBold:"roboto-bold", sans-serif;
+
+
+
+
+
+

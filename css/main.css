@@ -1,0 +1,1574 @@
+@charset "UTF-8";
+/* **************************** */
+/* IMPORTAR PARCIALES PARA COMPILAR */
+/* **************************** */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+/* @RESET */
+/* ********** */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* @VARIABLES */
+/* ********** */
+/* @TIPOGRAFÍA */
+/* ********** */
+@font-face {
+  font-family: "roboto-regular";
+  src: url(../../font/roboto-regular.woff2) format("woff2"), url(../../font/roboto-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../../font/roboto-bold.woff2) format("woff2"), url(../../font/roboto-bold.woff) format("woff");
+}
+
+/* @MIXIN */
+/* ********** */
+/* @BOTONES */
+/* ********** */
+/* @CAROUSEL */
+/* ********** */
+/* @COVER_BANNER */
+/* ********** */
+/* @DROPBOX */
+/* ********** */
+/* @GRIDS */
+/* ********** */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (min-max 150px, 1fr)[auto-fit];
+        grid-template-columns: repeat(auto-fit, min-max 150px, 1fr);
+    padding: 16px;
+  }
+  header .container-uno {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (min-max 150px, 1fr)[auto-fit];
+        grid-template-columns: repeat(auto-fit, min-max 150px, 1fr);
+    border-bottom: 3px solid grey;
+  }
+  header .container-uno .contenido__titulo {
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+  }
+  header .container-uno .contenido__usuarios {
+    font-family: "roboto-regular", sans-serif;
+    font-size: 16px;
+  }
+  header .container-dos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container-dos .container__btntexto {
+    font-family: "roboto-bold", sans-serif;
+  }
+  header .container-dos .container__botoncito {
+    position: relative;
+    width: 4.6rem;
+    height: 2rem;
+  }
+  header .container-dos .container__botoncito input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  header .container-dos .container__deslizador {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .container-dos .container__deslizador:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  input:checked + header .container-dos .container__deslizador {
+    background-color: #34a8;
+  }
+  input:focus + header .container-dos .container__deslizador {
+    -webkit-box-shadow: 0 0 1px #2196f3;
+            box-shadow: 0 0 1px #2196f3;
+  }
+  input:checked + header .container-dos .container__deslizador:before {
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  header .container-dos .container__deslizador {
+    border-radius: 34px;
+  }
+  header .container-dos .container__deslizador:before {
+    border-radius: 50%;
+  }
+  .cabecera {
+    background-color: white;
+    padding: 16px;
+  }
+  .cabecera .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid blue;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+  }
+  .cabecera .info__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .info__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/twitter.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .info__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .info__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .info__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .cabecera .caja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid blue;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    -ms-flex-preferred-size: 312px;
+        flex-basis: 312px;
+  }
+  .cabecera .caja__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .caja__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/twitter.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .caja__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .caja__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .caja__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .cabecera .cajon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid red;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    -ms-flex-preferred-size: 312px;
+        flex-basis: 312px;
+  }
+  .cabecera .cajon__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .cajon__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/instagram.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .cajon__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .cajon__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .cajon__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .cabecera .cajan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid red;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    -ms-flex-preferred-size: 312px;
+        flex-basis: 312px;
+  }
+  .cabecera .cajan__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .cajan__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/pinterest.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .cajan__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .cajan__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .cajan__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: red;
+  }
+  .titulodos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .puno-caja {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-caja .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-caja .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-caja .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-caja .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .puno-cajon {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-cajon .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-cajon .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajon .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajon .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .puno-cajan {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-cajan .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-cajan .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajan .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajan .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .puno-cajane {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-cajane .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-cajane .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajane .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajane .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .puno-cajino {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-cajino .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-cajino .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajino .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajino .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .puno-cajana {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-cajana .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-cajana .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajana .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajana .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .puno-cajanauno {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-cajanauno .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-cajanauno .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajanauno .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajanauno .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .puno-cajanados {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .puno-cajanados .contenido__nombre {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 16px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 25px;
+  }
+  .puno-cajanados .contenido__vector {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajanados .contenido__numusuario {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .puno-cajanados .contenido__followers {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / span 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (min-max 150px, 1fr)[auto-fit];
+        grid-template-columns: repeat(auto-fit, min-max 150px, 1fr);
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .container-uno {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .container-uno .contenido__titulo {
+    font-family: "roboto-bold", sans-serif;
+    font-size: 24px;
+  }
+  header .container-uno .contenido__usuarios {
+    font-family: "roboto-regular", sans-serif;
+    font-size: 16px;
+  }
+  header .container-dos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container-dos .container__btntexto {
+    font-size: "roboto-bold", sans-serif;
+  }
+  header .container-dos .container__botoncito {
+    position: relative;
+    width: 4.6rem;
+    height: 2rem;
+  }
+  header .container-dos .container__botoncito input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  header .container-dos .container__deslizador {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .container-dos .container__deslizador:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  input:checked + header .container-dos .container__deslizador {
+    background-color: #34a8;
+  }
+  input:focus + header .container-dos .container__deslizador {
+    -webkit-box-shadow: 0 0 1px #2196f3;
+            box-shadow: 0 0 1px #2196f3;
+  }
+  input:checked + header .container-dos .container__deslizador:before {
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  header .container-dos .container__deslizador {
+    border-radius: 34px;
+  }
+  header .container-dos .container__deslizador:before {
+    border-radius: 50%;
+  }
+  .cabecera {
+    padding: 16px;
+  }
+  .cabecera .containercards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cabecera .containercards .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid blue;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    -ms-flex-preferred-size: 312px;
+        flex-basis: 312px;
+  }
+  .cabecera .containercards .info__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .containercards .info__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/twitter.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .containercards .info__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .containercards .info__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .containercards .info__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .cabecera .containercards .caja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid blue;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    -ms-flex-preferred-size: 312px;
+        flex-basis: 312px;
+  }
+  .cabecera .containercards .caja__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .containercards .caja__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/twitter.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .containercards .caja__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .containercards .caja__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .containercards .caja__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .cabecera .containercards .cajon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid red;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    -ms-flex-preferred-size: 312px;
+        flex-basis: 312px;
+  }
+  .cabecera .containercards .cajon__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .containercards .cajon__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/instagram.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .containercards .cajon__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .containercards .cajon__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .containercards .cajon__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #8FCDC5;
+  }
+  .cabecera .containercards .cajan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 3px solid red;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    -ms-flex-preferred-size: 312px;
+        flex-basis: 312px;
+  }
+  .cabecera .containercards .cajan__usuario {
+    font-size: 10px;
+    font-family: "roboto-bold", sans-serif;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabecera .containercards .cajan__usuario::before {
+    margin-right: 10px;
+    margin-top: 20px;
+    content: url("../../iconos/pinterest.svg");
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .cabecera .containercards .cajan__numusuario {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 40px;
+    font-family: "roboto-bold", sans-serif;
+    margin-top: 20px;
+  }
+  .cabecera .containercards .cajan__followers {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+    font-family: "roboto-regular", sans-serif;
+    color: #BDC0C8;
+  }
+  .cabecera .containercards .cajan__today {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: red;
+  }
+  .cabecera .caja-maestra {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 16px;
+    /* por encima de 600px tenemos 4 columnas */
+  }
+}
+
+/* @FORMULARIOS */
+/* ********** */
+/* @NAVEGACIÓN */
+/* ********** */
+/* @HEADERS */
+/* ********** */
+/* @FOOTER */
+/* ********** */
+/* @HOME */
+/* ********** */
+/* @CONTACTAR */
+/* ********** */

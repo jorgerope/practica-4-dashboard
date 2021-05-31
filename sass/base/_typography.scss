@@ -1,2 +1,20 @@
 /* @TIPOGRAFÍA */
 /* ********** */
+
+
+//font face
+
+
+@font-face {
+    font-family: "roboto-regular";
+    src: url(../../font/roboto-regular.woff2) format("woff2"),
+         url(../../font/roboto-regular.woff)   format("woff");
+}
+
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url(../../font/roboto-bold.woff2) format("woff2"),
+         url(../../font/roboto-bold.woff)   format("woff");
+}
+
