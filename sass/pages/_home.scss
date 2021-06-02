@@ -1,2 +1,309 @@
 /* @HOME */
 /* ********** */
+// DESKTOP
+
+@media only screen and (min-width: map-get($breakpoints, desktop)) {
+    //   header
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max (150px, 1fr));
+        padding: 16px;
+        display: flex;
+
+        // CAbecera con titulo, numero usuarios
+        .container-uno {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+
+            .contenido {
+                &__titulo {
+                    font-family: $fontFamilyBold;
+                    font-size: map-get($tipografias, mediano);
+                }
+
+                &__usuarios {
+                    font-family: $fontFamily;
+                    font-size: map-get($tipografias, media);
+                }
+            }
+        }
+        // Boton
+        .container-dos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .container {
+                &__btntexto {
+                    font-size: $fontFamilyBold;
+                }
+
+                &__botoncito {
+                    position: relative;
+                    width: 4.6rem;
+                    height: 2rem;
+                }
+
+                &__botoncito input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+
+                &__deslizador {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    transition: 0.4s;
+                }
+
+                &__deslizador:before {
+                    position: absolute;
+                    content: "";
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    -webkit-transition: 0.4s;
+                    transition: 0.4s;
+                }
+
+                input:checked + &__deslizador {
+                    background-color: #34a8;
+                }
+                input:focus + &__deslizador {
+                    box-shadow: 0 0 1px #2196f3;
+                }
+                input:checked + &__deslizador:before {
+                    -webkit-transform: translateX(26px);
+                    -ms-transform: translateX(26px);
+                    transform: translateX(26px);
+                }
+                &__deslizador {
+                    border-radius: 34px;
+                }
+
+                &__deslizador:before {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .cabecera {
+        padding: 16px;
+        // background-color: red;
+
+        // card tipo1
+        .containercards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                border-top: 3px solid map-get($colores, colorLinea1);
+                background-color: map-get($colores, colorbg);
+                margin-bottom: 16px;
+                flex-basis: 312px;
+
+                &__usuario {
+                    font-size: map-get($tipografias, pequeno);
+                    font-family: $fontFamilyBold;
+                    align-self: center;
+
+                    &::before {
+                        margin-right: 10px;
+                        margin-top: 20px;
+                        content: url("../../iconos/twitter.svg");
+                        display: inline-block;
+
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        background-size: 100%;
+                    }
+                }
+
+                &__numusuario {
+                    align-self: center;
+                    font-size: map-get($tipografias, grande);
+                    font-family: $fontFamilyBold;
+                    margin-top: 20px;
+                }
+
+                &__followers {
+                    align-self: center;
+                    margin-top: -20px;
+                    font-family: $fontFamily;
+                    color: map-get($colores, colorFont2);
+                }
+
+                &__today {
+                    align-self: center;
+                    color: map-get($colores, colorFont3);
+                }
+            }
+
+            .caja {
+                display: flex;
+                flex-direction: column;
+                border-top: 3px solid map-get($colores, colorLinea1);
+                background-color: map-get($colores, colorbg);
+                margin-bottom: 16px;
+                flex-basis: 312px;
+
+                &__usuario {
+                    font-size: map-get($tipografias, pequeno);
+                    font-family: $fontFamilyBold;
+                    align-self: center;
+
+                    &::before {
+                        margin-right: 10px;
+                        margin-top: 20px;
+                        content: url("../../iconos/twitter.svg");
+
+                        display: inline-block;
+
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        background-size: 100%;
+                    }
+                }
+
+                &__numusuario {
+                    align-self: center;
+                    font-size: map-get($tipografias, grande);
+                    font-family: $fontFamilyBold;
+                    margin-top: 20px;
+                }
+
+                &__followers {
+                    align-self: center;
+                    margin-top: -20px;
+                    font-family: $fontFamily;
+                    color: map-get($colores, colorFont2);
+                }
+
+                &__today {
+                    align-self: center;
+                    color: map-get($colores, colorFont3);
+                }
+            }
+
+            .cajon {
+                display: flex;
+                flex-direction: column;
+                border-top: 3px solid map-get($colores, colorLinea2);
+                background-color: map-get($colores, colorbg);
+                margin-bottom: 16px;
+                flex-basis: 312px;
+                &__usuario {
+                    font-size: map-get($tipografias, pequeno);
+                    font-family: $fontFamilyBold;
+                    align-self: center;
+
+                    &::before {
+                        margin-right: 10px;
+                        margin-top: 20px;
+                        content: url("../../iconos/instagram.svg");
+
+                        display: inline-block;
+
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        background-size: 100%;
+                    }
+                }
+
+                &__numusuario {
+                    align-self: center;
+                    font-size: map-get($tipografias, grande);
+                    font-family: $fontFamilyBold;
+                    margin-top: 20px;
+                }
+
+                &__followers {
+                    align-self: center;
+                    margin-top: -20px;
+                    font-family: $fontFamily;
+                    color: map-get($colores, colorFont2);
+                }
+
+                &__today {
+                    align-self: center;
+                    color: map-get($colores, colorFont3);
+                }
+            }
+
+            .cajan {
+                display: flex;
+                flex-direction: column;
+                border-top: 3px solid map-get($colores, colorLinea2);
+                background-color: map-get($colores, colorbg);
+                margin-bottom: 16px;
+                flex-basis: 312px;
+                &__usuario {
+                    font-size: map-get($tipografias, pequeno);
+                    font-family: $fontFamilyBold;
+                    align-self: center;
+
+                    &::before {
+                        margin-right: 10px;
+                        margin-top: 20px;
+                        content: url("../../iconos/pinterest.svg");
+
+                        display: inline-block;
+
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        background-size: 100%;
+                    }
+                }
+
+                &__numusuario {
+                    align-self: center;
+                    font-size: map-get($tipografias, grande);
+                    font-family: $fontFamilyBold;
+                    margin-top: 20px;
+                }
+
+                &__followers {
+                    align-self: center;
+                    margin-top: -20px;
+                    font-family: $fontFamily;
+                    color: map-get($colores, colorFont2);
+                }
+
+                &__today {
+                    align-self: center;
+                    color: map-get($colores, colorLinea2);
+                }
+            }
+        }
+
+        // card tipo 2
+
+        .caja-maestra {
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-column-gap: 16px;
+            /* por encima de 600px tenemos 4 columnas */
+        }
+    }
+}
